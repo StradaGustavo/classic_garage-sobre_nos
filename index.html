@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre nós | Classic Garage</title>
+  <meta name="description" content="Conheça a história da Classic Garage: paixão por carros antigos, respeito à originalidade e compromisso com cada detalhe.">
+  <link rel="icon" type="image/png" href="images/Classic_Garage.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <!-- AJUSTE os links das outras páginas (Início, Serviços, Portfólio) para o caminho real delas -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html#inicio" class="header__logo" aria-label="Classic Garage - início">
+        <img src="images/Classic_Garage.png" alt="Classic Garage - Restauração de carros antigos">
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list" id="navList">
+          <li class="nav__indicator" id="navIndicator" aria-hidden="true"></li>
+          <li><a href="../index.html#inicio" class="nav__link">Início</a></li>
+          <li><a href="../index.html#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="../portfolio/index.html" class="nav__link">Portfólio</a></li>
+          <li><a href="#inicio" class="nav__link is-active" aria-current="page">Sobre nós</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--small btn--pulse">Entrar em contato</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MENU MOBILE ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer__close" id="drawerClose" aria-label="Fechar menu">&times;</button>
+    <img class="drawer__logo" src="images/Classic_Garage.png" alt="Classic Garage">
+    <ul class="drawer__list">
+      <li><a href="../index.html#inicio" class="drawer__link">Início</a></li>
+      <li><a href="../index.html#servicos" class="drawer__link">Serviços</a></li>
+      <li><a href="../portfolio/index.html" class="drawer__link">Portfólio</a></li>
+      <li><a href="#inicio" class="drawer__link">Sobre nós</a></li>
+    </ul>
+    <a href="#contato" class="btn btn--pulse drawer__cta">Entrar em contato</a>
+  </aside>
+
+  <!-- ============ TRANSIÇÃO: VELOCÍMETRO (aparece ao clicar nos links para outras páginas) ============
+       Usa as mesmas imagens da home: images/Velocimetro.png e images/Ponteiro.png -->
+  <div class="warp" id="warp" aria-hidden="true">
+    <div class="warp__gauge">
+      <img class="warp__dial" src="images/Velocimetro.png" alt="">
+      <img class="warp__needle" id="warpNeedle" src="images/Ponteiro.png" alt="">
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="shero" id="inicio">
+      <div class="shero__content">
+        <p class="eyebrow eyebrow--light"><span>Sobre nós</span></p>
+        <h1 class="shero__title"><span class="line"><span class="red">Mais que</span></span><span class="line"><span class="red">carros antigos,</span></span><span class="line"><span>é a nossa paixão.</span></span></h1>
+        <p class="shero__text reveal" style="--d:.7s">Somos apaixonados por histórias sobre rodas. Aqui, cada<br class="d-br"> projeto é tratado com o respeito, o cuidado e a dedicação<br class="d-br"> que um clássico merece. Nossa missão é devolver vida a<br class="d-br"> carros que marcaram época, preservando sua essência e<br class="d-br"> sua originalidade.</p>
+        <a href="#contato" class="btn btn--pulse reveal" style="--d:.9s">Entrar em contato</a>
+      </div>
+    </section>
+
+    <!-- ============ NOSSA HISTÓRIA ============ -->
+    <section class="history" id="historia">
+      <div class="history__inner">
+        <div class="history__copy">
+          <p class="eyebrow eyebrow--dark reveal"><span>Nossa história</span></p>
+          <h2 class="history__title reveal" style="--d:.1s">Do sonho<br>à oficina.</h2>
+          <p class="history__text reveal" style="--d:.15s">Tudo começou com um simples sonho:<br class="d-br"> o de transformar carros antigos em novas<br class="d-br"> histórias. O que era apenas um hobby, logo se<br class="d-br"> tornou um propósito.</p>
+          <p class="history__text reveal" style="--d:.2s">Com o tempo, vimos que não estávamos<br class="d-br"> sozinhos. Cada cliente que chegava com seu<br class="d-br"> clássico trazia consigo uma história, uma<br class="d-br"> lembrança, um carinho. E foi assim que nos<br class="d-br"> tornamos referência em restauração de<br class="d-br"> carros antigos na região.</p>
+          <p class="history__text reveal" style="--d:.25s">Hoje, seguimos com o mesmo entusiasmo no<br class="d-br"> primeiro dia, sempre buscando o melhor para<br class="d-br"> cada projeto.</p>
+          <!-- Troque o link do botão pela página que quiser (ex.: portfólio) -->
+          <a href="#contato" class="btn btn--pulse reveal" style="--d:.3s">Conheça nossa história</a>
+        </div>
+        <div class="history__img reveal" style="--d:.15s">
+          <img src="images/Mecanico.png" alt="Mecânico da Classic Garage trabalhando no motor de um clássico" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUE ESCOLHER A GENTE ============ -->
+    <section class="why" aria-labelledby="whyTitle">
+      <p class="eyebrow reveal"><span>Por que escolher a gente?</span></p>
+      <h2 class="why__title reveal" id="whyTitle" style="--d:.1s">Compromisso com<br>cada detalhe.</h2>
+      <div class="perks__grid">
+        <div class="perk reveal" style="--d:0s"><img src="images/engrenagem.png" alt="" aria-hidden="true"><h3>Técnica especializada</h3><p>Profissionais experientes e apaixonados por carros antigos.</p></div>
+        <div class="perk reveal" style="--d:.1s"><img src="images/escudo.png" alt="" aria-hidden="true"><h3>Qualidade e convicção</h3><p>Usamos peças de qualidade para garantir os melhores resultados.</p></div>
+        <div class="perk reveal" style="--d:.2s"><img src="images/cronometro.png" alt="" aria-hidden="true"><h3>Respeito ao seu tempo</h3><p>Cumprimos os prazos e mantemos você informado em todas as etapas.</p></div>
+        <div class="perk reveal" style="--d:.3s"><img src="images/carro.png" alt="" aria-hidden="true"><h3>Paixão por clássicos</h3><p>Mais do que um trabalho, é o que nos move todos os dias.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ VAMOS CONVERSAR? ============ -->
+    <section class="scta" id="contato">
+      <div class="scta__content">
+        <p class="eyebrow eyebrow--light reveal"><span>Vamos conversar?</span></p>
+        <h2 class="scta__title reveal" style="--d:.1s">Seu clássico<br>merece o melhor.</h2>
+        <p class="scta__text reveal" style="--d:.2s">Se você tem um carro antigo e quer restaurar, ou<br class="d-br"> apenas quer tirar alguma dúvida, entre em contato.<br class="d-br"> Será um prazer conviver com você!</p>
+        <!-- Troque pelo seu WhatsApp: https://wa.me/55DDDNUMERO -->
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn btn--pulse reveal" style="--d:.3s">Entrar em contato</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
